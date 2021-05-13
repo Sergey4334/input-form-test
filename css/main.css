@@ -125,7 +125,7 @@ a {
 }
 .elem {
   position: absolute;
-  right: 0;
+  right: 8px;
   bottom: 5px;
   display: block;
   width: 3px;
@@ -263,4 +263,62 @@ input[type="number"] {
 .form__add {
   padding-left: 24px;
   padding-right: 7px;
+}
+/*Media querys*/
+
+@media screen and (max-width: 1170px) {
+  .form__element {
+    flex-direction: column;
+  }
+  .form__block-input {
+    padding-left: 0px;
+  }
+  .df {
+    margin: 10px 0px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .form__block-input {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__local {
+    width: 80%;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #8b9198;
+  }
+  .form__checkin {
+    width: 80%;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    border-bottom: 1px solid #8b9198;
+  }
+  .form__checkout {
+    width: 80%;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #8b9198;
+  }
+  .input__title {
+    font-size: 16px;
+  }
+  .form__local:nth-child(1) .block__input::after,
+  .form__checkout:nth-child(3) .block__input::after {
+    display: none;
+  }
+  .elem,
+  .elem-arrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .df {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .input__numbers {
+    margin: 10px 0px;
+  }
 }
