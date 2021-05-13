@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Form input</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <!-- <h1>Hello world!</h1> -->
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="form">
+            <form class="form__element">
+              <div class="form__block-input df">
+                <div class="form__local">
+                  <div class="input__title">Место или название отеля</div>
+                  <div class="block__input right__input">
+                    <img src="images/local.png" alt="Local" />
+                    <input
+                      type="text"
+                      class="local"
+                      placeholder="Введите здесь место"
+                    />
+                  </div>
+                </div>
+                <div class="form__checkin">
+                  <div class="input__title">Заезд</div>
+                  <div class="block__input block__checkin">
+                    <img src="images/kalendar.png" alt="Local" />
+                    <input
+                      type="text"
+                      name="trip-start"
+                      value="12 мая"
+                      min="2021-05-05"
+                      max="2021-12-31"
+                      class="local datepik"
+                    />
+                    <span class="elem"></span>
+                  </div>
+                </div>
+                <div class="form__checkout">
+                  <div class="input__title">Выезд</div>
+                  <div class="block__input">
+                    <input
+                      type="text"
+                      name="trip-end"
+                      class="local datepik"
+                      value="12 мая"
+                      id="trip-end"
+                      min="2021-05-05"
+                      max="2021-12-31"
+                    />
+                    <span class="elem-arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form__block-search df">
+                <div class="input__numbers">
+                  <div class="number__item">
+                    <div class="input__title">Номера</div>
+                    <div class="quantity-block">
+                      <span class="quantity-arrow-minus"></span>
+                      <input class="quantity-num" type="number" value="1" />
+                      <span class="quantity-arrow-plus"></span>
+                    </div>
+                  </div>
+                  <div class="number__item">
+                    <div class="input__title">Взрослые</div>
+                    <div class="quantity-block">
+                      <span class="quantity-arrow-minus"></span>
+                      <input class="quantity-num" type="number" value="1" />
+                      <span class="quantity-arrow-plus"></span>
+                    </div>
+                  </div>
+                  <div class="number__item">
+                    <div class="input__title">Дети</div>
+                    <div class="quantity-block">
+                      <span class="quantity-arrow-minus"></span>
+                      <input class="quantity-num" type="number" value="0" />
+                      <span class="quantity-arrow-plus"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__add">
+                  <a class="btn__add" href="#"></a>
+                </div>
+                <button class="form__btn" type="submit">Найти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

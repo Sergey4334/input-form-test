@@ -1,0 +1,266 @@
+html {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0px auto;
+  height: 100vh;
+}
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  min-height: 90px;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(45, 77, 79, 0.4);
+  box-shadow: 0px 2px 15px 0px rgba(45, 77, 79, 0.4);
+}
+.form__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.form__block-input {
+  width: 54%;
+  padding-left: 30px;
+}
+.form__local {
+  width: 254px;
+  padding: 0px 0px 0px 20px;
+  position: relative;
+}
+.right__input {
+  margin: 0px 10px 0px 0px;
+}
+.input__title {
+  font-family: "Proxima Nova Cn Rg";
+  font-size: 12px;
+  color: #232323;
+  padding-bottom: 5px;
+}
+.block__input {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+.block__input img {
+  padding-right: 6px;
+}
+.form__local:nth-child(1) .block__input::after,
+.form__checkout:nth-child(3) .block__input::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 2px;
+  height: 32px;
+  background: url("../images/line-vertical.png") no-repeat center;
+  background-size: cover;
+}
+.local {
+  border: none;
+  outline: none;
+  color: #6b6b6b;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  background-color: transparent;
+}
+.elem {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: url("../images/elem-.png") no-repeat center;
+  background-size: cover;
+}
+.elem-arrow {
+  position: absolute;
+  right: 25px;
+  bottom: 5px;
+  display: block;
+  width: 12px;
+  height: 7px;
+  background: url("../images/arrow.png") no-repeat center;
+  background-size: cover;
+}
+
+input::placeholder {
+  color: #6b6b6b;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+}
+.form__checkin {
+  width: 162px;
+  padding: 0px 15px 0px 23px;
+  position: relative;
+}
+.block__checkin {
+  margin-right: 10px;
+}
+.form__checkout {
+  width: 170px;
+  padding: 0px 15px;
+  position: relative;
+}
+
+.input__numbers {
+  display: flex;
+  align-items: center;
+}
+.btn__add {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-color: #f5c477;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+}
+.btn__add::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/plus.png") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.form__btn {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-family: "Proxima Nova Cn Rg";
+  width: 175px;
+  height: 63px;
+  color: #fff;
+  background-color: #ed9915;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  cursor: pointer;
+  margin: 0px 15px;
+  text-transform: uppercase;
+}
+.input__numbers {
+  text-align: center;
+}
+/* Style input type number!*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+/* Для Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.quantity-block {
+  position: relative;
+  padding: 0px 23px;
+}
+.quantity-num {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #8b9198;
+  text-align: center;
+  color: #8b9198;
+  font-family: "Avenir Next";
+  font-size: 16px;
+}
+.quantity-arrow-plus {
+  position: absolute;
+  top: 2px;
+  right: 7px;
+  background: url("../images/arrow-t.png") no-repeat center center;
+  background-size: cover;
+  width: 11px;
+  height: 7px;
+  display: block;
+  cursor: pointer;
+}
+.quantity-arrow-minus {
+  position: absolute;
+  bottom: 2px;
+  right: 7px;
+  background: url("../images/arrow-b.png") no-repeat center center;
+  background-size: cover;
+  width: 11px;
+  height: 7px;
+  display: block;
+  cursor: pointer;
+}
+.form__add {
+  padding-left: 24px;
+  padding-right: 7px;
+}

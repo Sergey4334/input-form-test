@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Proxima Nova Cn Rg";
+  src: url("../fonts/proxi/ProximaNovaCond-Regular.eot");
+  src: url("../fonts/proxi/ProximaNovaCond-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/proxi/ProximaNovaCond-Regular.woff2") format("woff2"),
+    url("../fonts/proxi/ProximaNovaCond-Regular.woff") format("woff"),
+    url("../fonts/proxi/ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/avenir/AvenirNextCyr-Medium.ttf")
+      format("embedded-opentype"),
+    url("../fonts/avenir/AvenirNextCyr-Medium.woff2") format("woff2"),
+    url("../fonts/avenir/AvenirNextCyr-Medium.woff") format("woff"),
+    url("../fonts/avenir/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
